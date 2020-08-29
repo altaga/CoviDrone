@@ -24,7 +24,7 @@ None of these robots is capable of disinfecting surfaces such as tables or desks
 
 <img src="https://i.ibb.co/p1JxcnM/20200827-225132.jpg" width="1000">
 
-[1] https://tectales.com/bionics-robotics/9-disinfection-robots-fighting-the-coronavirus.html
+
 
 # Table of contents
 
@@ -41,7 +41,7 @@ None of these robots is capable of disinfecting surfaces such as tables or desks
 
 <img src="https://i.ibb.co/5ndwL6K/drone.png" width="800">
 
-## Materials:
+# Materials:
 
 List the hardware and software you will use to build this.
 
@@ -61,11 +61,11 @@ Libraries:
 - Paho-Mqtt. (https://pypi.org/project/paho-mqtt/)
 - TelloPy. (https://pypi.org/project/tellopy/) 
 
-## Diagram:
+# Diagram:
 
 <img src="https://i.ibb.co/VjNvMp3/Esquema.png" width="1000">
 
-## Stripe Led Assembly:
+# Stripe Led Assembly:
 
 Diagram: 
 
@@ -87,7 +87,15 @@ And works.
 
 <img src="https://i.ibb.co/SNBGynq/20200828-233752.jpg" width="1000">
 
-## Tello Important Considerations:
+# WARNING
+
+<img src="https://i.ibb.co/sF4QLyG/image.png" width="1000">
+
+Segun un artciculo cientifico de la compañia PurpleSun[2] sabemos los siguientes datos:
+
+D_{90}\ Dose=47\ \frac{J}{m^2}
+
+# Tello Important Considerations:
 
 - Check the propeller order, if the order of the propellers is not correct, the drone will not fly.
 <img src="https://i.ibb.co/QJxjrsX/Correct-Drone-Propeller.png" width="600">
@@ -102,7 +110,7 @@ And works.
 
 - Always check the battery level of the drone, if the battery is less than 10% the drone will not take off, also if it is flying and reaches 10% the drone will land.
 
-## Gateway Configuration:
+# Gateway Configuration:
 
 If you are noob consider setting up your raspberry with the following tutorial.
 https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
@@ -125,7 +133,7 @@ You need to have the following configuration to be able to perform Serial commun
 
 <img src="https://i.ibb.co/mHsGSMw/Captures.png" width="800">
 
-## Tello Software:
+# Tello Software:
 
 Libraries that you have to install before continuing.
 
@@ -169,13 +177,13 @@ Lateral Fly Control Diagram (This is the diagram of how the drone moves if you a
 Frontal Fly Control Diagram (This is the diagram of how the drone moves if you are looking at it from the front):
 <img src="https://i.ibb.co/nCCYmbw/Frontal-control-diagram.png" width="1000">
 
-## System Connection Diagram:
+# System Connection Diagram:
 
 This is our general connection diagram.
 
 <img src="https://i.ibb.co/4Zz9tCM/Spresense-Diagram-bb.png" width="1000">
 
-## Demo:
+# Demo:
 
 In this video we will present our EPIC Demo.
 
@@ -186,3 +194,8 @@ Video: Click on the image:
 Sorry github does not allow embed videos.
 
 * [Table of Contents](#table-of-contents)
+
+Articles:
+
+[1] https://tectales.com/bionics-robotics/9-disinfection-robots-fighting-the-coronavirus.html
+[2] https://www.researchgate.net/publication/339887436_2020_COVID-19_Coronavirus_Ultraviolet_Susceptibility
