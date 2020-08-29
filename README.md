@@ -93,7 +93,81 @@ And works.
 
 Segun un artciculo cientifico de la compañia PurpleSun[2] sabemos los siguientes datos:
 
-D_{90}\ Dose=47\ \frac{J}{m^2}
+Esta medida de aqui es la dosis minima para bajar la actividad de los virus en un 90%.
+
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=D_{90}\ Dose=47\ \frac{J}{m^2}" width="400">
+<p>
+<p >
+Watts es igual a Joules entre Segundos.
+<p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=W=\frac{J}{s}" width="200">
+</p>
+Watts por tiempo es igual a Joules.
+<p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=W\ *\ s=\ J" width="200">
+</p>
+<p >
+Por lo tanto Watts por tiempo entre area es igual a Joules entre area es igual a la dosis.
+<p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\frac{W\ *\ s}{m^2}=\frac{J}{m^2}\ =\ Dose" width="500">
+</p>
+<p >
+Dentro de un circuito electrico es igual a Voltaje por corriente.
+<p>
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=W=V\ *\ I" width="200">
+</p>
+Desarrollando la formula a nuestro problema, sabemos que el voltaje de cada Led es de 3 volts y la cantidad de leds es 30, por lo tanto.
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=W=3\ volts\ *\ I\ *\ 30\ Leds" width="500">
+</p>
+
+Obtenemos la corriente del circuito con la resistencia que tenemos antes de los Leds, ya que tenemos una pila LiPo, esta estabilizara su voltaje a los 3.7 Volts, sin embargo los leds requieren 3 para funcionar, por lo tanto nuestra resistencia sera la encargada de determinar la corriente que pase por los Leds, en este caso el voltaje que tendra la resistencia sera de 0.7 volts.
+
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=I\ =\ \frac{V}{R}" width="130">
+</p>
+
+Entonces.
+
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=I\ =\ \frac{0.7\ volts}{22\ ohms}\ =\ 31mA" width="400">
+</p>
+
+Por lo tanto la potencia de todos los leds seria.
+
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=W=3\ *\ 0.0318\ *\ 30\ =\ 2.86\ Watts" width="600">
+</p>
+
+Combinando todas las formulas obtenemos la siguiente formula general.
+
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=\frac{\ \frac{(V_{source}\ -\ V_{Led})}{R}\ *\ V_{Led}\ *\ NLeds\ *\ t}{Area}\ =\ \ Dose" width="1000">
+</p>
+
+- Vsource = Voltage of the source [volts]
+- Vled = LED operating voltage [volts]
+- R = Resistor before the led [ohms]
+- NLeds = Number of LEDs in parallel in the circuit [dimensionless]
+- Area = Exposure area [square meter]
+- Time = Exposure time [seconds]
+
+Sutituyendo en la formula los valores que queremos obtener.
+
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=2.863*\ t\ =\ \ 47" width="300">
+</p>
+
+Ahora calculamos el tiempo de exposicion necesario para que el dron logre la dosis minima.
+
+<p align="center">
+<img src="https://render.githubusercontent.com/render/math?math=t\ =\ \ \frac{47}{2.863}\ =\ 16.41\ s" width="400">
+</p>
 
 # Tello Important Considerations:
 
