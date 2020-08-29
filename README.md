@@ -251,19 +251,11 @@ Lateral Fly Control Diagram (This is the diagram of how the drone moves if you a
 Frontal Fly Control Diagram (This is the diagram of how the drone moves if you are looking at it from the front):
 <img src="https://i.ibb.co/nCCYmbw/Frontal-control-diagram.png" width="1000">
 
-# System Connection Diagram:
-
-This is our general connection diagram.
-
-<img src="https://i.ibb.co/4Zz9tCM/Spresense-Diagram-bb.png" width="1000">
-
 # Demo:
-
-In this video we will present our EPIC Demo.
 
 Video: Click on the image:
 
-[![SGD](https://i.ibb.co/R4JrJg3/Tello-01.png)](https://youtu.be/IduAEYOa_H8)
+[![CoviDrone](https://i.ibb.co/5ndwL6K/drone.png)](Pending)
 
 Sorry github does not allow embed videos.
 
