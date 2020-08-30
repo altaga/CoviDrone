@@ -1,6 +1,6 @@
 # CoviDrone
 
-Indoor UV light surface cleaning drone.
+Indoor UV light surface Covid19 deactivator drone.
 
 <img src="https://i.ibb.co/w7KR4ZS/ezgif-com-optimize-1.gif" width="800">
 
@@ -113,7 +113,7 @@ Therefore Watts per time between area equals Joules between area equals dose.
 <img src="https://render.githubusercontent.com/render/math?math=\frac{W\ *\ s}{m^2}=\frac{J}{m^2}\ =\ Dose" width="500">
 </p>
 <p >
-Within an electrical circuit Watts is equal to Voltage times current.
+Within an electrical circuit Watts is equal to Voltage per current.
 <p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=W=V\ *\ I" width="200">
