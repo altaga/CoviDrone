@@ -2,7 +2,7 @@
 
 Indoor UV light surface cleaning drone.
 
-<img src="https://i.ibb.co/LZWZjVf/ezgif-com-optimize.gif" width="800">
+<img src="https://i.ibb.co/w7KR4ZS/ezgif-com-optimize-1.gif" width="800">
 
 # Table of contents
 
