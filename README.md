@@ -1,30 +1,6 @@
 # CoviDrone
 
-When you start driving drones with a remote control, it's like giving a small child the detonator of a bomb, at any time it is possible for the drone to get out of control and take an eye out of someone.
-
-Some examples of problems caused by the bad handling of drones.
-
-"During a Christian Democratic Party campaign in September 2014, a Parrot AR drone crashed in front of German Chancellor Angela Merkel."
-
-"What started out as a goofy holiday promotion ended terribly when a drone crashed into the face of Brooklyn Daily photographer Georgine Benvenuto"
-
-https://www.techrepublic.com/article/12-drone-disasters-that-show-why-the-faa-hates-drones/
-
-Personally, the first time I flew a drone, I almost cut a finger off of my friend, so I say it from my own experience.
-
-I want to make a drone that is capable of disinfecting office areas that conventional robots cannot access for example [1].
-
-- TMiRob 
-- XDBOT
-- Tru-D SmartUVC
-- UVCLight
-- Siemens / Aucma
-
-None of these robots is capable of disinfecting surfaces such as tables or desks.
-
-<img src="https://i.ibb.co/p1JxcnM/20200827-225132.jpg" width="1000">
-
-
+Indoor UV light surface cleaning drone.
 
 # Table of contents
 
@@ -37,7 +13,19 @@ None of these robots is capable of disinfecting surfaces such as tables or desks
 
 ## Introduction:
 
+The Covid19 pandemic has been an event that has affected not only the life of each person, but the coexistence of people in all aspects of life and one of these aspects has clearly been the way in which employees coexist in offices .
 
+One of the main measures to combat the pandemic is cleaning work areas [1](#1), however the use of chemicals to perform this cleaning can be harmful to health in the long term, so the use of UV lights is a vital part for the future of office work.
+
+I want to make a drone that is capable of disinfecting office areas that conventional robots cannot access for example [2](#2).
+
+- TMiRob 
+- XDBOT
+- Tru-D SmartUVC
+- UVCLight
+- Siemens / Aucma
+
+None of these robots is capable of disinfecting surfaces such as tables or desks.
 
 <img src="https://i.ibb.co/5ndwL6K/drone.png" width="800">
 
@@ -71,7 +59,7 @@ Diagram:
 
 <img src="https://i.ibb.co/JdjKRsr/Untitled-Sketch-2-bb.png" width="1000">
 
-Assemble the LEDs one by one, taking care to always connect Anodes with Anodes and Cathodes with Cathodes.
+Assemble the LED's one by one, taking care to always connect Anodes with Anodes and Cathodes with Cathodes.
 
 <img src="https://i.ibb.co/BVWSn0r/20200827-182459.jpg" width="1000">
 
@@ -91,60 +79,60 @@ And works.
 
 <img src="https://i.ibb.co/sF4QLyG/image.png" width="1000">
 
-Segun un artciculo cientifico de la compañia PurpleSun[2] sabemos los siguientes datos:
+According to a scientific article from PurpleSun [3] (# 3) we know the following data:
 
-Esta medida de aqui es la dosis minima para bajar la actividad de los virus en un 90%.
+This measurement here is the minimum dose to lower virus activity by 90%.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=D_{90}\ Dose=47\ \frac{J}{m^2}" width="400">
 <p>
 <p >
-Watts es igual a Joules entre Segundos.
+Watts equals Joules between Seconds.
 <p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=W=\frac{J}{s}" width="200">
 </p>
-Watts por tiempo es igual a Joules.
+Watts per time equals Joules.
 <p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=W\ *\ s=\ J" width="200">
 </p>
 <p >
-Por lo tanto Watts por tiempo entre area es igual a Joules entre area es igual a la dosis.
+Therefore Watts per time between area equals Joules between area equals dose.
 <p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\frac{W\ *\ s}{m^2}=\frac{J}{m^2}\ =\ Dose" width="500">
 </p>
 <p >
-Dentro de un circuito electrico es igual a Voltaje por corriente.
+Within an electrical circuit Watts is equal to Voltage times current.
 <p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=W=V\ *\ I" width="200">
 </p>
-Desarrollando la formula a nuestro problema, sabemos que el voltaje de cada Led es de 3 volts y la cantidad de leds es 30, por lo tanto.
+Developing the formula to our problem, we know that the voltage of each Led is 3 volts and the number of LED's is 30, therefore.
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=W=3\ volts\ *\ I\ *\ 30\ Leds" width="500">
 </p>
 
-Obtenemos la corriente del circuito con la resistencia que tenemos antes de los Leds, ya que tenemos una pila LiPo, esta estabilizara su voltaje a los 3.7 Volts, sin embargo los leds requieren 3 para funcionar, por lo tanto nuestra resistencia sera la encargada de determinar la corriente que pase por los Leds, en este caso el voltaje que tendra la resistencia sera de 0.7 volts.
+We obtain the current of the circuit with the resistance that we have before the LED's, since we have a LiPo battery, this will stabilize its voltage at 3.7 Volts, however the LED's require 3 volts to work, therefore our resistance will be determining the current that passes through the LED's, in this case the voltage that the resistance will have will be 0.7 volts.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=I\ =\ \frac{V}{R}" width="130">
 </p>
 
-Entonces.
+Then.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=I\ =\ \frac{0.7\ volts}{22\ ohms}\ =\ 31mA" width="400">
 </p>
 
-Por lo tanto la potencia de todos los leds seria.
+Therefore the power of all LEDs would be.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=W=3\ *\ 0.0318\ *\ 30\ =\ 2.86\ Watts" width="600">
 </p>
 
-Combinando todas las formulas obtenemos la siguiente formula general.
+Combining all the formulas we obtain the following general formula.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\frac{\ \frac{(V_{source}\ -\ V_{Led})}{R}\ *\ V_{Led}\ *\ NLeds\ *\ t}{Area}\ =\ \ Dose" width="1000">
@@ -153,17 +141,17 @@ Combinando todas las formulas obtenemos la siguiente formula general.
 - Vsource = Voltage of the source [volts]
 - Vled = LED operating voltage [volts]
 - R = Resistor before the led [ohms]
-- NLeds = Number of LEDs in parallel in the circuit [dimensionless]
+- NLeds = Number of LED's in parallel in the circuit [dimensionless]
 - Area = Exposure area [square meter]
 - Time = Exposure time [seconds]
 
-Sutituyendo en la formula los valores que queremos obtener.
+Substituting in the formula the values ​​we want.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=2.863*\ t\ =\ \ 47" width="300">
 </p>
 
-Ahora calculamos el tiempo de exposicion necesario para que el dron logre la dosis minima.
+Now we calculate the exposure time necessary for the drone to achieve the D90 dose.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=t\ =\ \ \frac{47}{2.863}\ =\ 16.41\ s" width="400">
@@ -186,26 +174,33 @@ Ahora calculamos el tiempo de exposicion necesario para que el dron logre la dos
 
 # Gateway Configuration:
 
-If you are noob consider setting up your raspberry with the following tutorial.
-https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up
+Download the operating system of the Raspberry Pi.
 
-You need to have the following configuration to be able to perform Serial communication.
+- To download the operating system of the Raspberry enter the following link:
+- Link: https://www.raspberrypi.org/downloads/raspbian/
+- Download the lastest version.
 
-<img src="https://i.ibb.co/6gKKmy3/raspberry-pi-configuration.png" width="500">
+Flash the operating system in the SD.
+
+Software: https://www.balena.io/etcher/
+
+Because the drone use the WiFi connection to control it, we must first connect to our WiFi to set up the libraries.
+
+<p align="center">
+<img src="https://i.ibb.co/gMGXbYJ/image.png" width="500">
+</p>
 
 - Run the following commands to setup the libraries
 
-    sudo apt-get update
-    sudo apt-get upgrade
-    pip3 install tellopy paho-mqtt
+        sudo apt-get update
+        sudo apt-get upgrade
+        sudo apt-get install python3-opencv
+        pip3 install tellopy
+        git clone https://github.com/altaga/CoviDrone
     
 - Connect to the Tello Drone WiFi network.
 
-<img src="https://i.ibb.co/ZzbxQZC/Capturewifi.png" width="800">
-        
-- Connect the USBSerial, download and run the code "TelloSerial.py"
-
-<img src="https://i.ibb.co/mHsGSMw/Captures.png" width="800">
+<img src="https://i.ibb.co/JxS59X3/RPI-WiFI.png" width="1000">
 
 # Tello Software:
 
@@ -263,5 +258,9 @@ Sorry github does not allow embed videos.
 
 Articles:
 
-[1] https://tectales.com/bionics-robotics/9-disinfection-robots-fighting-the-coronavirus.html
-[2] https://www.researchgate.net/publication/339887436_2020_COVID-19_Coronavirus_Ultraviolet_Susceptibility
+### 1
+https://covid19.cdc.gov.sa/community-public/preventive-measures-in-workplaces/
+### 2
+https://tectales.com/bionics-robotics/9-disinfection-robots-fighting-the-coronavirus.html
+### 3
+https://www.researchgate.net/publication/339887436_2020_COVID-19_Coronavirus_Ultraviolet_Susceptibility
