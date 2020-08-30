@@ -10,7 +10,7 @@ Indoor UV light surface cleaning drone.
 * [Materials](#materials)
 * [Diagram](#diagram)
 * [Stripe Led Assembly](#stripe-led-assembly)
-* [WARNING](#warning)
+* [Science Content](#science-content)
 * [Tello Important Considerations](#tello-important-considerations)
 * [Gateway Configuration](#gateway-configuration)
 * [Tello Software](#tello-software)
@@ -84,7 +84,7 @@ NOTE: Whenever you work with UV Led's wear eye protection.
 
 <img src="https://i.ibb.co/DQzfh0k/20200829-225245.jpg" width="1000">
 
-# WARNING
+# Science Content:
 
 <img src="https://i.ibb.co/sF4QLyG/image.png" width="1000">
 
