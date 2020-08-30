@@ -10,7 +10,11 @@ Indoor UV light surface cleaning drone.
 * [Materials](#materials)
 * [Diagram](#diagram)
 * [Stripe Led Assembly](#stripe-led-assembly)
+* [WARNING](#warning)
+* [Tello Important Considerations](#tello-important-considerations)
 * [Gateway Configuration](#gateway-configuration)
+* [Tello Software](#tello-software)
+* [Final Product](#final-product)
 * [Demo](#demo)
 
 ## Introduction:
@@ -267,7 +271,7 @@ Video: Click on the image:
 
 Sorry github does not allow embed videos.
 
-* [Table of Contents](#table-of-contents)
+* [Table of contents](#table-of-contents)
 
 Articles:
 
