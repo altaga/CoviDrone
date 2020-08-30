@@ -2,6 +2,8 @@
 
 Indoor UV light surface cleaning drone.
 
+<img src="https://i.ibb.co/hXyM4mf/Gif-UV-1.gif" width="800">
+
 # Table of contents
 
 * [Introduction](#introduction)
@@ -15,9 +17,9 @@ Indoor UV light surface cleaning drone.
 
 The Covid19 pandemic has been an event that has affected not only the life of each person, but the coexistence of people in all aspects of life and one of these aspects has clearly been the way in which employees coexist in offices .
 
-One of the main measures to combat the pandemic is cleaning work areas [1](#1), however the use of chemicals to perform this cleaning can be harmful to health in the long term, so the use of UV lights is a vital part for the future of office work.
+One of the main measures to combat the pandemic is cleaning work areas [ [1](#1) ], however the use of chemicals to perform this cleaning can be harmful to health in the long term, so the use of UV lights is a vital part for the future of office work.
 
-I want to make a drone that is capable of disinfecting office areas that conventional robots cannot access for example [2](#2).
+I want to make a drone that is capable of deactivate Covid19 in office areas that conventional robots cannot access for example[ [2](#2) ].
 
 - TMiRob 
 - XDBOT
@@ -36,7 +38,6 @@ List the hardware and software you will use to build this.
 Hardware: 
 - DJI Tello Drone.
 - RaspberryPi 3/4.
-- Serial Module CH340.
 - 30 UV Leds (3V, 40mA).
 - 1 Resistor (22 Ohm).
 - 3.7 V, 400mA, LiPo Battery, C1.
@@ -74,6 +75,10 @@ Place the power circuit of the Led strip.
 And works.
 
 <img src="https://i.ibb.co/SNBGynq/20200828-233752.jpg" width="1000">
+
+NOTE: Whenever you work with UV Led's wear eye protection.
+
+<img src="https://i.ibb.co/DQzfh0k/20200829-225245.jpg" width="1000">
 
 # WARNING
 
@@ -199,22 +204,20 @@ Because the drone use the WiFi connection to control it, we must first connect t
         git clone https://github.com/altaga/CoviDrone
     
 - Connect to the Tello Drone WiFi network.
-
-<img src="https://i.ibb.co/JxS59X3/RPI-WiFI.png" width="1000">
+<p align="center">
+<img src="https://i.ibb.co/JxS59X3/RPI-WiFI.png" width="500">
+</p>
 
 # Tello Software:
 
 Libraries that you have to install before continuing.
 
 - https://pypi.org/project/tellopy/
-- https://pypi.org/project/pyserial/
-- https://pypi.org/project/av/
 - https://pypi.org/project/opencv-python/
-- https://pypi.org/project/numpy/
 
-The flight algorithm of the Drone is based on pure programming along with the libraries that were previously mentioned. The algorithm reviews at all times that there is a human face in front of it and looks for the way to focus and approach.
+The drone flight algorithm is based on pure programming along with the libraries that were previously mentioned. The algorithm reviews at all times that there is a stop signal (or any other mark) in front of it and looks for the way to focus and approach.
 
-Face recognition is done using Face Detection using Haar Cascades, the Haar Cascade file used will be in the "haarcascade" folder, inside "Python Code", more information in the link below.
+Signal recognition is done using Haar Cascades, the Haar Cascade file used will be in the "haar_model" folder, inside "Rasp", more information in the link below.
 
 Link: https://docs.opencv.org/3.4.3/d7/d8b/tutorial_py_face_detection.html
 
@@ -236,15 +239,25 @@ It is important to mention that this code provides the method to check all the s
             print('event="%s" data=%s' % (event.getname(), str(data)))
             
             
-<img src="https://i.ibb.co/n0SPQpc/rep.png" width="1000">
+<img src="https://i.ibb.co/kBx0vfp/saved-Image.png" width="1000">
 
-The system works like a state machine, the case requires the command that makes the drone approach the client, with this type of system we avoid sending commands that are useless to the drone.
+The system works like a state machine, the case requires the command that makes the drone approach the signal, with this type of system we avoid sending commands that are useless to the drone.
 
 Lateral Fly Control Diagram (This is the diagram of how the drone moves if you are looking at it from the side):
-<img src="https://i.ibb.co/qmyyPNW/Control.png" width="1000">
+<img src="https://i.ibb.co/KbSMcrC/Control1.png" width="1000">
 
 Frontal Fly Control Diagram (This is the diagram of how the drone moves if you are looking at it from the front):
 <img src="https://i.ibb.co/nCCYmbw/Frontal-control-diagram.png" width="1000">
+
+In our case, the path that the drone must follow to travel the table is as follows.
+
+<img src="https://i.ibb.co/kQZ9whd/Trayectory.png" width="1000">
+
+# Final Product:
+
+<img src="https://i.ibb.co/GJBs51B/20200829-223956.jpg" width="1000">
+<img src="https://i.ibb.co/yknC1JH/20200829-223912.jpg" width="1000">
+<img src="https://i.ibb.co/k4FcH6L/20200829-223921.jpg" width="1000">
 
 # Demo:
 
