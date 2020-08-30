@@ -96,7 +96,7 @@ This is the minimum dose to lower virus activity by 90%.
 <img src="https://render.githubusercontent.com/render/math?math=D_{90}\ Dose=47\ \frac{J}{m^2}" width="400">
 <p>
 <p >
-Watts equals Joules between Seconds.
+Watts equals Joules divided by  Seconds.
 <p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=W=\frac{J}{s}" width="200">
@@ -107,7 +107,7 @@ Watts per time equals Joules.
 <img src="https://render.githubusercontent.com/render/math?math=W\ *\ s=\ J" width="200">
 </p>
 <p >
-Therefore Watts per time between area equals Joules between area equals dose.
+Therefore Watts per time divided by  area equals Joules divided by  area equals dose.
 <p>
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=\frac{W\ *\ s}{m^2}=\frac{J}{m^2}\ =\ Dose" width="500">
