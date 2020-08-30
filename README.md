@@ -90,7 +90,7 @@ NOTE: Whenever you work with UV Led's wear eye protection.
 
 According to a scientific article from PurpleSun [ [3](# 3) ] we know the following data:
 
-This measurement here is the minimum dose to lower virus activity by 90%.
+This is the minimum dose to lower virus activity by 90%.
 
 <p align="center">
 <img src="https://render.githubusercontent.com/render/math?math=D_{90}\ Dose=47\ \frac{J}{m^2}" width="400">
