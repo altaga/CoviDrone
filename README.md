@@ -88,7 +88,7 @@ NOTE: Whenever you work with UV Led's wear eye protection.
 
 <img src="https://i.ibb.co/sF4QLyG/image.png" width="1000">
 
-According to a scientific article from PurpleSun [ [3](# 3) ] we know the following data:
+According to a scientific article from PurpleSun [ [3](#3) ] we know the following data:
 
 This is the minimum dose to lower virus activity by 90%.
 
