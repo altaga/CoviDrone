@@ -23,7 +23,7 @@ The Covid19 pandemic has been an event that has affected not only the life of ea
 
 One of the main measures to combat the pandemic is cleaning work areas [ [1](#1) ], however the use of chemicals to perform this cleaning can be harmful to health in the long term, so the use of UV lights is a vital part for the future of office work.
 
-I want to make a drone that is capable of deactivate Covid19 in office areas that conventional robots cannot access for example[ [2](#2) ].
+I want to make a drone that is capable of deactivate Covid19 in office areas that conventional robots cannot access for example [ [2](#2) ].
 
 - TMiRob 
 - XDBOT
