@@ -82,11 +82,11 @@ And works.
 
 NOTE: Whenever you work with UV Led's wear eye protection.
 
-<img src="https://i.ibb.co/DQzfh0k/20200829-225245.jpg" width="1000">
+<img src="https://hackster.imgix.net/uploads/attachments/1184348/20200830_163014_UWyN3vJYtH.jpg?auto=compress%2Cformat&w=740&h=555&fit=max" width="1000">
 
 # Science Content:
 
-<img src="https://i.ibb.co/sF4QLyG/image.png" width="1000">
+<img src="https://hackster.imgix.net/uploads/attachments/1184349/science_xsEUEyVZwR.png?auto=compress%2Cformat&w=740&h=555&fit=max" width="1000">
 
 According to a scientific article from PurpleSun [ [3](#3) ] we know the following data:
 
@@ -267,7 +267,7 @@ In our case, the path that the drone must follow to travel the table is as follo
 
 Video: Click on the image:
 
-[![CoviDrone](https://i.ibb.co/5ndwL6K/drone.png)](Pending)
+[![CoviDrone](https://i.ibb.co/5ndwL6K/drone.png)](https://youtu.be/0S2LLVwh60M)
 
 Sorry github does not allow embed videos.
 
