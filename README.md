@@ -1,6 +1,6 @@
 # CoviDrone
 
-Indoor UV light surface Covid19 deactivator drone.
+Indoor UV light surface cleaning drone
 
 <img src="https://i.ibb.co/w7KR4ZS/ezgif-com-optimize-1.gif" width="800">
 
